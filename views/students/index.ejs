@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students</title>
+</head>
+<body>
+
+<h2>Add Student</h2>
+<form action="/view/students" method="POST">
+  <input name="name" placeholder="Name" required />
+  <input name="roll" type="number" placeholder="Roll" required />
+  <button type="submit">Add</button>
+</form>
+
+<h2>Student List</h2>
+<ul>
+  <% students.forEach(s => { %>
+    <li>
+      <%= s.name %> - <%= s.roll %>
+      <a href="/view/students/edit/<%= s._id %>">Edit</a>
+      <a href="/view/students/delete/<%= s._id %>">Delete</a>
+    </li>
+  <% }) %>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "24BDA70025-5B-NAMAY-SHARMA",
+  "version": "1.0.0",
+  "description": "Student Management System (MVC CRUD)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Namay Sharma",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.5.0",
+    "serverless-http": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

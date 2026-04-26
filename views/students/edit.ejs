@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Edit Student</h2>
+
+<form action="/view/students/update/<%= student._id %>" method="POST">
+  <input name="name" value="<%= student.name %>" required />
+  <input name="roll" value="<%= student.roll %>" required />
+  <button type="submit">Update</button>
+</form>
+
+</body>
+</html>
